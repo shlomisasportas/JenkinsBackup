@@ -36,9 +36,9 @@
       <includeTestSummary>false</includeTestSummary>
       <includeFailedTests>false</includeFailedTests>
       <commitInfoChoice>NONE</commitInfoChoice>
-      <includeCustomMessage>false</includeCustomMessage>
+      <includeCustomMessage>true</includeCustomMessage>
       <customMessage></customMessage>
-      <customMessageSuccess></customMessageSuccess>
+      <customMessageSuccess>Study!!!</customMessageSuccess>
       <customMessageAborted></customMessageAborted>
       <customMessageNotBuilt></customMessageNotBuilt>
       <customMessageUnstable></customMessageUnstable>
