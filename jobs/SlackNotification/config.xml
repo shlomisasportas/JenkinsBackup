@@ -19,10 +19,10 @@
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.18">
       <baseUrl></baseUrl>
-      <teamDomain></teamDomain>
-      <authToken></authToken>
+      <teamDomain>https://opsschool.slack.com/services/hooks/jenkins-ci/</teamDomain>
+      <authToken>4k4n1M33zLGdMPftPdeTbuCO</authToken>
       <tokenCredentialId></tokenCredentialId>
-      <botUser>false</botUser>
+      <botUser>true</botUser>
       <room></room>
       <startNotification>true</startNotification>
       <notifySuccess>true</notifySuccess>
