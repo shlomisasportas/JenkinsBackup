@@ -15,35 +15,12 @@
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
-  <publishers>
-    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.18">
-      <baseUrl></baseUrl>
-      <teamDomain>https://opsschool.slack.com/services/hooks/jenkins-ci/</teamDomain>
-      <authToken>4k4n1M33zLGdMPftPdeTbuCO</authToken>
-      <tokenCredentialId></tokenCredentialId>
-      <botUser>true</botUser>
-      <room></room>
-      <startNotification>true</startNotification>
-      <notifySuccess>true</notifySuccess>
-      <notifyAborted>true</notifyAborted>
-      <notifyNotBuilt>true</notifyNotBuilt>
-      <notifyUnstable>true</notifyUnstable>
-      <notifyRegression>true</notifyRegression>
-      <notifyFailure>true</notifyFailure>
-      <notifyBackToNormal>true</notifyBackToNormal>
-      <notifyRepeatedFailure>true</notifyRepeatedFailure>
-      <includeTestSummary>false</includeTestSummary>
-      <includeFailedTests>false</includeFailedTests>
-      <commitInfoChoice>NONE</commitInfoChoice>
-      <includeCustomMessage>true</includeCustomMessage>
-      <customMessage>Study!!!</customMessage>
-      <customMessageSuccess>Study!!!</customMessageSuccess>
-      <customMessageAborted>Study!!!</customMessageAborted>
-      <customMessageNotBuilt></customMessageNotBuilt>
-      <customMessageUnstable></customMessageUnstable>
-      <customMessageFailure></customMessageFailure>
-    </jenkins.plugins.slack.SlackNotifier>
-  </publishers>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#general\&quot;, \&quot;username\&quot;: \&quot;webhookbot\&quot;, \&quot;text\&quot;: \&quot;This is posted to #general and comes from a bot named webhookbot.\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
   <buildWrappers/>
 </project>
