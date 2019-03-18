@@ -15,7 +15,7 @@ That is, it will post to my private slack channel &quot;Building Successful&quot
   <builders/>
   <publishers>
     <hudson.plugins.templateproject.ProxyPublisher plugin="template-project@1.5.2">
-      <projectName>SlackNotification</projectName>
+      <projectName>SlackNotification_templateProject</projectName>
     </hudson.plugins.templateproject.ProxyPublisher>
   </publishers>
   <buildWrappers/>
