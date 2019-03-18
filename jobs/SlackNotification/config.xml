@@ -18,7 +18,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;!!!Study!!!\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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
+      <command>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;Build (Builders) - !!!Study!!!\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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
 </command>
     </hudson.tasks.Shell>
   </builders>
@@ -34,7 +34,7 @@
           </logTexts>
           <EscalateStatus>false</EscalateStatus>
           <RunIfJobSuccessful>true</RunIfJobSuccessful>
-          <script>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;!!!Build Successfull!!!\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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&#xd;
+          <script>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;Post - Build (Publisher) - !!!Build Successfull!!!\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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&#xd;
 </script>
         </hudson.plugins.postbuildtask.TaskProperties>
       </tasks>
