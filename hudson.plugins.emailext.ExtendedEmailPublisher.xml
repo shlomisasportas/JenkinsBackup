@@ -1,6 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.65">
   <mailAccount>
+    <smtpHost>smtp.gmail.com</smtpHost>
     <useSsl>false</useSsl>
   </mailAccount>
   <addAccounts/>
