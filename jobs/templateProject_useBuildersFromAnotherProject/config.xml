@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -9,7 +10,11 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.plugins.templateproject.ProxyBuilder plugin="template-project@1.5.2">
+      <projectName>SlackNotification</projectName>
+    </hudson.plugins.templateproject.ProxyBuilder>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
