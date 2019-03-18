@@ -23,9 +23,22 @@
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.test.AggregatedTestResultPublisher plugin="junit@1.27">
-      <includeFailedBuilds>false</includeFailedBuilds>
-    </hudson.tasks.test.AggregatedTestResultPublisher>
+    <hudson.plugins.postbuildtask.PostbuildTask plugin="postbuild-task@1.8">
+      <tasks>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>true</RunIfJobSuccessful>
+          <script>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;!!!Build Successfull!!!\&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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&#xd;
+</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+      </tasks>
+    </hudson.plugins.postbuildtask.PostbuildTask>
   </publishers>
   <buildWrappers/>
 </project>
