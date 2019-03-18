@@ -1,10 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.65">
   <mailAccount>
-    <smtpHost>smtp.gmail.com</smtpHost>
-    <smtpPort>465</smtpPort>
-    <smtpUsername>shlomi.sasportas92@gmail.com</smtpUsername>
-    <smtpPassword>{AQAAABAAAAAQXbrIXoJK8K5BFWy1nzP5o+/9qHKWrD+rGKCTe2K8zNI=}</smtpPassword>
     <useSsl>true</useSsl>
   </mailAccount>
   <addAccounts/>
