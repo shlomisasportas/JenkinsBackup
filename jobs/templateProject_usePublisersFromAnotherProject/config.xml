@@ -2,7 +2,7 @@
 <project>
   <actions/>
   <description>This will use the publishers from SlackNotification job.&#xd;
-That is, it will post to my private slack channel Building Successful.</description>
+That is, it will post to my private slack channel &quot;Building Successful&quot;.</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
