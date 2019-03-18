@@ -33,9 +33,14 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;lalala&quot;</command>
+      <command>curl -X POST --data-urlencode &quot;payload={\&quot;channel\&quot;: \&quot;#shlomi\&quot;, \&quot;username\&quot;: \&quot;Shlomi-Bot\&quot;, \&quot;text\&quot;: \&quot;Step #1 - Checkout was made at GitHub Repository, going to make unit tests on the submitted code.&quot;, \&quot;icon_emoji\&quot;: \&quot;:ghost:\&quot;}&quot; https://hooks.slack.com/services/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</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.trigger.BuildPipelineTrigger plugin="build-pipeline-plugin@1.5.8">
+      <configs/>
+      <downstreamProjectNames>pipeline_UnitTest</downstreamProjectNames>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.trigger.BuildPipelineTrigger>
+  </publishers>
   <buildWrappers/>
 </project>
