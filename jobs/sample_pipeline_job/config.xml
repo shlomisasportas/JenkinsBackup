@@ -9,7 +9,8 @@
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
-          <url>https://github.com/shlomisasportas/JenkinsChanges.git</url>
+          <url>git@github.com:shlomisasportas/JenkinsChanges.git</url>
+          <credentialsId>GitHub</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
