@@ -4,9 +4,7 @@
   <description>This will use the builders from SlackNotification job.&#xd;
 That is, it will post to my private slack channel &quot;!!!Study!!!&quot;</description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.plugins.templateproject.UpdateTransientProperty plugin="template-project@1.5.2"/>
-  </properties>
+  <properties/>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
